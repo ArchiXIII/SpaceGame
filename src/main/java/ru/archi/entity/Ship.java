@@ -36,7 +36,15 @@ public abstract class Ship {
         isLife = false;
     }
 
-    public boolean getIsLife(){
+    public boolean IsLife(){
         return isLife;
+    }
+
+    public void setSpeed(Integer speed){
+        this.speed = speed;
+    }
+
+    public Integer getSpeed(){
+        return speed;
     }
 }
