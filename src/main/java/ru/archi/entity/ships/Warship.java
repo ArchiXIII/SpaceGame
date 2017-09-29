@@ -6,8 +6,22 @@ import main.java.ru.archi.entity.Ship;
  * Created by Черный on 27.09.2017.
  */
 public class Warship extends Ship {
+    int rockets;
+
     public Warship(Integer speed) {
         super(speed);
+    }
+
+    public void setRockets(int rockets){
+        this.rockets = rockets;
+    }
+
+    public int getRockets(){
+        return rockets;
+    }
+
+    public void Shoot(){
+        --rockets;
     }
 
     @Override
