@@ -4,10 +4,10 @@ package main.java.ru.archi.entity;
  * Created by Черный on 27.09.2017.
  */
 public abstract class Ship {
-    int hitPoint = 100;
-    boolean isLife = true;
-    Integer speed;
-    Sentient pilot;
+    private int hitPoint = 100;
+    private boolean alive = true;
+    private Integer speed;
+    private Sentient pilot;
 
     public Ship(Integer speed){
         this.speed = speed;
@@ -29,15 +29,15 @@ public abstract class Ship {
 
     public void damage(){
         hitPoint -= 10;
-        if(hitPoint < 1) destruction();
+        if(hitPoint < 1) destruct();
     }
 
-    private void destruction() {
-        isLife = false;
+    private void destruct() {
+        alive = false;
     }
 
-    public boolean IsLife(){
-        return isLife;
+    public boolean isLife(){
+        return alive;
     }
 
     public void setSpeed(Integer speed){

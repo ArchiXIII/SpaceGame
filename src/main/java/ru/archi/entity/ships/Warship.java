@@ -6,7 +6,7 @@ import main.java.ru.archi.entity.Ship;
  * Created by Черный on 27.09.2017.
  */
 public class Warship extends Ship {
-    int rockets;
+    private int rockets;
 
     public Warship(Integer speed) {
         super(speed);

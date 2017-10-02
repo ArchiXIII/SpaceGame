@@ -6,7 +6,7 @@ import main.java.ru.archi.entity.Ship;
  * Created by Черный on 29.09.2017.
  */
 public class MerchantShip extends Ship {
-    Integer quantityOfCargo;
+    private int quantityOfCargo;
 
     public MerchantShip(Integer speed){
         super(speed);
